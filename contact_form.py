@@ -18,10 +18,7 @@ keepalive = 2         # Keepalive timeout
 proc_name = "contact_form"
 pythonpath = "."
 
-# Logging
-accesslog = "logs/access.log"
-errorlog = "logs/error.log"
-loglevel = "info"
+
 
 # SSL (uncomment if using HTTPS)
 # keyfile = "/path/to/keyfile"

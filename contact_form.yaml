@@ -24,18 +24,7 @@ loglevel: "info"
 # keyfile: "/path/to/keyfile"
 # certfile: "/path/to/certfile"
 
-# Server mechanics
-daemon: false         # Don't run in background
-user: null           # Process owner
-group: null          # Process group
 
-# Server hooks
-pre_fork: null
-post_fork: null
-pre_exec: null
-pre_request: null
-post_request: null
-worker_exit: null
 
 # Application
 wsgi_app: "app:app"  # Format is "module_name:application_name" 

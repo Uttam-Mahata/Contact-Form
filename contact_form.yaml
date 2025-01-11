@@ -35,4 +35,7 @@ post_fork: null
 pre_exec: null
 pre_request: null
 post_request: null
-worker_exit: null 
+worker_exit: null
+
+# Application
+wsgi_app: "app:app"  # Format is "module_name:application_name" 

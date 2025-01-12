@@ -3,7 +3,7 @@ instance/*
 !instance/.gitignore
 .webassets-cache
 flask_session/
-
+__pycache__/
 # Virtual Environment
 venv/
 env/

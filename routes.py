@@ -36,7 +36,7 @@ def handle_contact():
 
     try:
         # Validate email format
-        validate_email(email, check_deliverability=False)
+        validate_email(email, check_deliverability=True)
     except EmailNotValidError as e:
         return jsonify({'error': 'Invalid email format'}), 400
 

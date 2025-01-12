@@ -20,8 +20,8 @@ scheduler = APScheduler()
 # CORS configuration
 CORS(app, resources={
     r"/api/*": {
-        "origins": "https://uttamm.web.app/",
-        "methods": ["POST"]
+        "origins": ["https://uttamm.web.app/", "https://contact-form-v2ph.onrender.com/"],
+        "methods": ["POST", "GET"]
     }
 })
 
@@ -44,7 +44,7 @@ def keep_alive():
     """
     try:
         # Replace with your actual application URL on Render
-        response = requests.get('https://your-app-name.onrender.com/api/health')
+        response = requests.get('https://contact-form-v2ph.onrender.com/api/health')
         logger.info(f"Keep-alive ping sent. Status: {response.status_code}")
     except Exception as e:
         logger.error(f"Keep-alive request failed: {str(e)}")
